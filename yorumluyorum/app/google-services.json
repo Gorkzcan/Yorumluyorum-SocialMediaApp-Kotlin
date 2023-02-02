@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "33384416283",
+    "project_id": "yorumluyorum-b410c",
+    "storage_bucket": "yorumluyorum-b410c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33384416283:android:479e4f77aeead12828a4be",
+        "android_client_info": {
+          "package_name": "com.gorkemozcan.yorumluyorum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33384416283-8sktbsh3sn4ngb1quvmftph8ko7m7467.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gorkemozcan.yorumluyorum",
+            "certificate_hash": "8070ff5dfc2f1819464b0430b472c8c5f10523f9"
+          }
+        },
+        {
+          "client_id": "33384416283-36svn3n04scqu52qpk97huqto21l8cq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYL4wFPB2E0n7EOxo_LIMkOgG1RBSEgvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33384416283-36svn3n04scqu52qpk97huqto21l8cq5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

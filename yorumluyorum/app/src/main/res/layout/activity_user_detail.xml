@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/splashback"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile1"
+            android:text="Kullanıcı Detayları"
+            android:fontFamily="@font/burbank"
+            android:textColor="@color/yaziRenk"
+            android:textSize="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="233dp"
+            android:layout_height="233dp"
+            android:id="@+id/ProfilePic"
+            app:layout_constraintTop_toBottomOf="@id/profile1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/circle"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayoutName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/full_name"
+            android:fontFamily="@font/burbank"
+            android:textColorHint="@color/grey"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProfilePic"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_user_vector">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yaziRenk"
+                android:fontFamily="@font/burbank"
+                android:id="@+id/TextInputEtName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayoutUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/username"
+            android:fontFamily="@font/burbank"
+            android:textColorHint="@color/grey"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutName"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_user_vector">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/burbank"
+                android:textColorHint="@color/yaziRenk"
+                android:id="@+id/TextInputEtUserName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayoutBio"
+            android:fontFamily="@font/burbank"
+            android:textColorHint="@color/grey"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/bio"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutUserName"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_description_vector">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/burbank"
+                android:textColorHint="@color/yaziRenk"
+                android:id="@+id/TextInputEtBio"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_Done"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutBio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            app:cornerRadius="8dp"
+            android:text="KAYDET"
+            android:textColor="@color/yaziRenk"
+            android:fontFamily="@font/burbank"
+            android:backgroundTint="#173428"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarImageLoading"
+            style="?android:attr/progressBarStyle"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutBio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:theme="@style/progressBar"
+
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>

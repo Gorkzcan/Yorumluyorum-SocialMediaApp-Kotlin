@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gorkemozcan.yorumluyorum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <application
+        android:icon="@drawable/logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.yorumluyorum">
+        <service android:name=".service.FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".view.activities.AddPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activities.MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activities.LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activities.RegisterActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activities.HomeActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activities.UserDetailActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".view.activities.UsersProfile"
+            android:exported="true"></activity>
+        <activity android:name=".view.activities.ChatActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

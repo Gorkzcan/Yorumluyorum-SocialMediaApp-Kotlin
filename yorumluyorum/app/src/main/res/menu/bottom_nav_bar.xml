@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bnHome"
+        android:title="Anasayfa"
+        android:icon="@drawable/ic_round_home_24" />
+    <item android:id="@+id/bnChat"
+        android:title="Sohbet"
+        android:icon="@drawable/ic_round_message_24"/>
+    <item android:id="@+id/bnPost"
+        android:title=""/>
+ <item android:id="@+id/bnProfile"
+        android:title="Profil"
+        android:icon="@drawable/ic_round_person_24"/>
+    <item android:id="@+id/bnExit"
+        android:title="Çıkış"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+
+</menu>
